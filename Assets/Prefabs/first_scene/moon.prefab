@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 3250702688985334506}
   - component: {fileID: 3250702688985334507}
   - component: {fileID: 3250702688985334504}
+  - component: {fileID: 2014112075304748606}
   m_Layer: 0
   m_Name: moon
-  m_TagString: Untagged
+  m_TagString: Moon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3250702688985334503}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.69, y: 2.09, z: -0.07}
+  m_LocalPosition: {x: 3.69, y: 2.09, z: -0.0000001}
   m_LocalScale: {x: 0.6074, y: 0.6074, z: 0.6074}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -146,4 +147,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _shouldCallButton: 0
+  _isAnimated: 1
   _transitionButton: {fileID: 0}
+  _animator: {fileID: 3250702688985334506}
+  _soundManager: {fileID: 0}
+  _animatedObject: {fileID: 2014112075304748606}
+--- !u!114 &2014112075304748606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3250702688985334503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79d55df0e7e33b647a369928f5fbcc19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SoundType: 0

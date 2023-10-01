@@ -13,13 +13,10 @@ public class ButtonController : MonoBehaviour
         _button.onClick.AddListener(ChangeScene);
 
         _sceneIndexToLoad = (SceneManager.GetActiveScene().buildIndex == 0) ? 1 : 0;
-        Debug.Log(_button.onClick == null);
     }
 
     public void ChangeScene()
     {
-
-        Debug.Log("change");
         SceneManager.LoadScene(_sceneIndexToLoad);
     } 
 }

@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 7391602405017679326}
   - component: {fileID: 7391602405017679324}
   - component: {fileID: 7391602405017679327}
+  - component: {fileID: 5887296029104901980}
   m_Layer: 0
   m_Name: star_switcher
-  m_TagString: Untagged
+  m_TagString: Star
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 75f4c7946b133dc40866c9867821367a, type: 3}
-  m_Color: {r: 1, g: 0, b: 1, a: 1}
+  m_Color: {r: 0.61459595, g: 0.6945162, b: 0.9811321, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -125,5 +126,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _shouldCallButton: 0
+  _isAnimated: 1
   _transitionButton: {fileID: 0}
   _animator: {fileID: 0}
+  _soundManager: {fileID: 0}
+  _animatedObject: {fileID: 5887296029104901980}
+--- !u!114 &5887296029104901980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7391602405017679320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79d55df0e7e33b647a369928f5fbcc19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SoundType: 1

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4931158043953351389}
   - component: {fileID: 2092431267673182780}
   - component: {fileID: 6081199628692912674}
+  - component: {fileID: 8765617139371319300}
   m_Layer: 0
   m_Name: wooden_house
   m_TagString: Untagged
@@ -99,8 +100,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _shouldCallButton: 1
+  _isAnimated: 0
   _transitionButton: {fileID: 0}
   _animator: {fileID: 0}
+  _soundManager: {fileID: 0}
+  _animatedObject: {fileID: 8765617139371319300}
 --- !u!61 &6081199628692912674
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -127,3 +131,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.71661, y: 0.92346287}
   m_EdgeRadius: 0
+--- !u!114 &8765617139371319300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4931158043953351388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79d55df0e7e33b647a369928f5fbcc19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SoundType: 4

@@ -5,25 +5,29 @@ public class AnimationsPlayer : MonoBehaviour
     [SerializeField]
     private bool _shouldCallButton = false;
     [SerializeField]
+    private bool _isAnimated = true;
+
+    [SerializeField]
     private GameObject _transitionButton;
+
     [SerializeField]
     private Animator _animator;
 
-    private void Start()
-    {
-        //_animator = GetComponent<Animator>();
+    [SerializeField]
+    private SoundManager _soundManager;
 
-        //if (_animator == null)
-        //{
-        //    _animator = GetComponentInParent<Animator>();
-        //}
-    }
+    [SerializeField]
+    private AnimatedObject _animatedObject;
 
     private void OnMouseDown()
     {
-        _animator.SetBool("isPlaying", true);
+        if (_isAnimated)
+        {
+            _animator.SetBool("isPlaying", true);
+            _soundManager.PlaySound(_animatedObject.SoundType);
+        }
 
-        if (_shouldCallButton )
+        if (_shouldCallButton)
         {
             _transitionButton.SetActive(true);
         }
@@ -31,6 +35,9 @@ public class AnimationsPlayer : MonoBehaviour
 
     private void OnMouseUp()
     {
-        _animator.SetBool("isPlaying", false);
+        if (_isAnimated)
+        {
+            _animator.SetBool("isPlaying", false);
+        }
     }
 }
